@@ -10,34 +10,20 @@
             "role": "Developer"
         }
     ],
-     "repositories": [
-        {
-            "type":"package",
-            "package": {
-                "name": "php-activerecord/php-activerecord",
-                "version":"dev-development",
-                "source": {
-                    "url": "git@github.com:jpfuentes2/php-activerecord.git",
-                    "type": "git",
-                    "reference":"andyleap-datetime"
-                }
-            }
-        }
-    ],
     "require": {
         "indeyets/pake": "~1.99",
         "shuber/curl": "dev-master",
         "slim/slim": "2.4.*",
         "slim/views": "0.1.*",
-        "php-activerecord/php-activerecord": "dev-development",
+        "php-activerecord/php-activerecord": "^1.1",
         "twig/twig": "1.15.0",
-        "robmorgan/phinx": "*",
+        "robmorgan/phinx": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "1.*",
         "phpunit/phpunit": "3.7.*",
         "there4/slim-test-helpers": "dev-master",
-        "indeyets/pake": "~1.99",
+        "indeyets/pake": "~1.99"
     },
     "autoload": {
         "psr-0": {"There4": "lib/"}

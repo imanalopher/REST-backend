@@ -32,7 +32,7 @@ class Auth {
 
 	public static function format_user($user) {
 		if ($user !== null) {
-			return $user->get_values_for(["username", "email", "auth_token"]);
+			return $user->get_values_for(array("username", "email", "auth_token"));
 		}
 		return false;
 	}

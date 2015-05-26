@@ -45,7 +45,7 @@ class Auth {
 			if ($user == null) {
 				return false;
 			}
-			$matches = [];
+			$matches = array();
 			preg_match('/Token token="(.*)", user_email="(.*)"/', $user, $matches);
 			if (isset($matches[1]) && isset($matches[2])) {
 				$this->user = \User::find_by_auth_token_and_email($matches[1], $matches[2]);

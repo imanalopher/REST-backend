@@ -31,10 +31,7 @@ class Auth {
 	}
 
 	public static function format_user($user) {
-		if ($user !== null) {
-			return $user->get_values_for(array("username", "email", "auth_token"));
-		}
-		return false;
+	    return $user? $user->get_values_for(array("username", "email", "auth_token")) : false;
 	}
 
 	public function current_session() {
